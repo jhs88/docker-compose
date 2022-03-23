@@ -1,0 +1,10 @@
+{
+	"database": {
+		"engine": "mariadb",
+		"host": "db",
+		"name": "npm",
+		"user": "jhs88",
+		"password": "Passw0rd1!",
+		"port": "3306"
+	}
+}
