@@ -7,8 +7,8 @@ services:
         environment:
             - OPENVPN_PROVIDER=PIA
             - OPENVPN_CONFIG=bahamas,ca_toronto,ca_montreal,mexico
-            - OPENVPN_USERNAME=admin
-            - OPENVPN_PASSWORD=password
+            - OPENVPN_USERNAME=p0554264
+            - OPENVPN_PASSWORD=vpdhrXNX6g
             - LOCAL_NETWORK=192.168.0.0/24
               #            - LOG_TO_STDOUT=true # transmission logs to stdout
               #            - OPENVPN_OPTS=--inactive 3600 --ping 10 --pring-exit 60
@@ -22,7 +22,8 @@ services:
             - '9091:9091'
             - '8888:8888'
         volumes:
-          - '/srv/torrents:/data'
+          - '/srv/pi/files/torrents:/data'
+        network_mode: bridge
         dns:
           - '8.8.8.8'
           - '8.8.4.4'
